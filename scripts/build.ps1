@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --icon="resources/icon/SOM.ico" --add-data="resources;resources" -n SOM main.py

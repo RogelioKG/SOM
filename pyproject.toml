@@ -1,0 +1,31 @@
+[project]
+name = "som"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "RogelioKG", email = "rogeliokg0813@gmail.com" }]
+requires-python = ">=3.13.7"
+dependencies = [
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.5",
+    "pyinstaller>=6.17.0",
+    "pywinstyles>=1.8",
+    "ttkbootstrap>=1.19.2",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors (與 PEP 8 標準不符的錯誤)
+    "W",  # pycodestyle warnings (與 PEP 8 標準不符的警告)
+    "F",  # pyflakes (檢查未使用的變數或模組等)
+    "I",  # isort (排序模組)
+    "C",  # flake8-comprehensions (簡潔表達式)
+    "B",  # flake8-bugbear (可揪出 mutable default arguments 等 BUG)
+    "UP", # pyupgrade (舊語法升級)
+]
+
+[tool.ruff.format]
+quote-style = "double"
